@@ -1,24 +1,21 @@
 package com.skeleton.myapplication.ui.home
 
 import android.os.Bundle
-import android.util.LayoutDirection
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.bumptech.glide.Glide
 import com.skeleton.myapplication.R
 import com.skeleton.myapplication.data.EventResult
 import com.skeleton.myapplication.databinding.FragmentHomeBinding
+import com.skeleton.myapplication.ui.MainViewModel
 import com.skeleton.myapplication.ui.adapter.PhotosAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
-    private val binding by viewBinding(FragmentHomeBinding::bind)
-    private val viewModel : HomeViewModel by viewModel()
+    private val binding :FragmentHomeBinding by viewBinding()
+    private val viewModel : MainViewModel by viewModel()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
