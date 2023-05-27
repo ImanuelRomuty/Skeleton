@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Skeleton</string>
+    <string name="preference_file_key" translatable="false">skeleton_app_pref</string>
+</resources>
