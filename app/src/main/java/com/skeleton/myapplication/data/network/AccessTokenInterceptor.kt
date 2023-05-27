@@ -1,6 +1,6 @@
 package com.skeleton.myapplication.data.network
 
-import com.example.storyappbiasa.storage.AppLocalData
+import com.skeleton.myapplication.storage.AppLocalData
 import okhttp3.Interceptor
 import okhttp3.Response
 
