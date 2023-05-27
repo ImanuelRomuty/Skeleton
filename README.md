@@ -1,7 +1,7 @@
 
 # Skeleton
 
-Hello, this project exists because I'm bored
+Hello, this project exists because I'm bored, BTW SKELETON FOR NUEL PLAYGROUND
 
 
 ## I use : 
