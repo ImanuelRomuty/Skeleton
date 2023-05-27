@@ -1,4 +1,4 @@
-package com.example.storyappbiasa.storage
+package com.skeleton.myapplication.storage
 
 interface Storage {
     fun setString(key: String, value: String)
