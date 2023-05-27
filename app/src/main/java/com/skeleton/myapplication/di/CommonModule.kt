@@ -11,7 +11,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-private const val BASE_URL = ""
+private const val BASE_URL = "https://api.unsplash.com/"
 val databaseModule = module {
 
 }
