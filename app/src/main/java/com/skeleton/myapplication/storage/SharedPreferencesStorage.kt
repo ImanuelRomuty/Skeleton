@@ -2,7 +2,6 @@ package com.skeleton.myapplication.storage
 
 import android.content.Context
 import androidx.core.content.edit
-import com.example.storyappbiasa.storage.Storage
 import com.skeleton.myapplication.R
 
 class SharedPreferencesStorage (context: Context) : Storage {

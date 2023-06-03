@@ -1,5 +1,8 @@
 package com.example.storyappbiasa.storage
 
+import com.skeleton.myapplication.storage.Storage
+import com.skeleton.myapplication.storage.UserLoggedIn
+
 class AppLocalData (private val storage: Storage) {
     fun setUserLoggedIn(user: UserLoggedIn) {
         storage.apply {

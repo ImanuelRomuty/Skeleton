@@ -1,4 +1,4 @@
-package com.example.storyappbiasa.storage
+package com.skeleton.myapplication.storage
 
 data class UserLoggedIn(
     val accessToken: String,

@@ -3,6 +3,7 @@ package com.skeleton.myapplication.ui.home
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.skeleton.myapplication.R
@@ -18,6 +19,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private val viewModel : MainViewModel by viewModel()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.toolbar.setOnMenuItemClickListener {
+            when(it.itemId){
+                R.id.search ->{
+                    findNavController().navigate(R.id.action_homeFragment_to_shareFragment)
+                    true
+                }
+                else -> false
+            }
+        }
 
         fetchData()
     }
@@ -31,9 +41,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 is EventResult.Success->{
                     val adapter = PhotosAdapter(it.data)
                     val layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL,false)
-                    binding.storyRecyclerView.setHasFixedSize(true)
-                    binding.storyRecyclerView.layoutManager = layoutManager
-                    binding.storyRecyclerView.adapter = adapter
+                    binding.photoRv.setHasFixedSize(true)
+                    binding.photoRv.layoutManager = layoutManager
+                    binding.photoRv.adapter = adapter
                 }
             }
         }

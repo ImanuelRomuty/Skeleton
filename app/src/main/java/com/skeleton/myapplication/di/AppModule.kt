@@ -1,7 +1,7 @@
 package com.skeleton.myapplication.di
 
 import com.example.storyappbiasa.storage.AppLocalData
-import com.example.storyappbiasa.storage.Storage
+import com.skeleton.myapplication.storage.Storage
 import com.skeleton.myapplication.source.*
 import com.skeleton.myapplication.storage.SharedPreferencesStorage
 import com.skeleton.myapplication.ui.MainViewModel
